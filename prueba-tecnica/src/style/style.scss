@@ -1,0 +1,89 @@
+@import "variablesA.scss";
+//@import "variablesB.scss";
+
+:root{
+    font-family: "IBM Plex Sans", serif;
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+    position: relative;
+    min-width: 0;
+}
+
+body{
+    min-height: 100dvh;
+    width: 100dvw;
+    background-color: $color-primary-100;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    display: block;
+}
+
+header,
+main,
+footer{
+    display: flex;
+}
+
+header{
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    background-color: $color-white;
+    .logoContainer{
+        picture{
+            img{
+                width: auto;
+                height: 40px;
+            }
+        }
+    }
+    .userContainer{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        &__info{
+            p{
+                margin: 0;
+                text-align: right;
+                small{
+                    color: $color-secondary;
+                }
+            }
+        }
+        &__avatar{
+            img{
+                width: 40px;
+                height: auto;
+            }
+        }
+    }
+}
+main{
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 2rem;
+}
+footer{
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.25rem 2rem;
+    background-color: $color-secondary-50;
+    p{
+        margin: 0;
+    }
+}
+
+.card{
+    background-color: $color-white;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    border-radius: $border-radius-1;
+    box-shadow: $drop-shadow-1;
+}

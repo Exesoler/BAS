@@ -2,12 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style/normalize.css">
+    <link rel="stylesheet" href="/src/style/style.css">
+    <title>Asientos del diario general - EasySoft</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <header>
+      <div class="logoContainer">
+        <picture>
+          <source srcset='/src/assets/logo.svg' type="image/svg+xml">
+          <source srcset='/src/assets/logo.webp' type='image/webp'>
+          <img src='/src/assets/logo.jpg' alt='EasySoft Isologotipo' type='image/jpeg'>
+        </picture>
+      </div>
+      <div class="userContainer">
+        <div class="userContainer__info">
+          <p>Nombre de usuario</p>
+          <p><small>Empresa</small></p>
+        </div>
+        <div class="userContainer__avatar">
+          <picture>
+            <source srcset='/src/assets/avatar.svg' type='image/svg+xml'>
+            <img src='/src/assets/avatar.webp' type='image/webp' alt='Avatar Icon'>
+          </picture>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Asientos del diario general</h1>
+      <section class="card stepper">
+        <div class="stepper_step">
+          
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="/src/assets/copyright.svg" alt="Copyrigth Icon">
+      <p><small>Todos los derechos reservados</small></p>
+    </footer>
+    <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
