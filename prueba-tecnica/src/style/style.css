@@ -48,10 +48,34 @@ p small {
   font-size: 16px;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  opacity: 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6574cd;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #253174;
+}
+
 * {
   box-sizing: border-box;
   position: relative;
   min-width: 0;
+}
+*:focus {
+  outline: 3px solid #f0f1fa;
 }
 
 body {
@@ -102,6 +126,10 @@ main {
   flex-direction: column;
   flex-grow: 1;
   padding: 2rem;
+  gap: 1rem;
+}
+main h1 {
+  margin: 0 0 1rem;
 }
 
 footer {
@@ -122,4 +150,127 @@ footer p {
   gap: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.stepper {
+  justify-content: space-between;
+  overflow: hidden;
+}
+.stepper__step {
+  display: flex;
+  gap: 0.25rem;
+  width: 10rem;
+}
+.stepper__step .stepperStep__icon img {
+  width: 1.5rem;
+  height: auto;
+}
+.stepper__step .stepperStep__text p {
+  margin: 0;
+}
+.stepper__step .stepperStep__text p:first-child {
+  color: #181a1b;
+  height: 23px;
+  display: flex;
+  align-items: center;
+}
+.stepper__step .stepperStep__text p small {
+  color: #6c757d;
+}
+.stepper__progress {
+  display: flex;
+  align-items: center;
+  background-color: #d9dbde;
+  width: 100%;
+  height: 0.25rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.stepper__progress .stepperProgress__bar {
+  display: block;
+  height: 0.25rem;
+  background-color: #6574cd;
+  border-radius: 1rem;
+  transition: all 150ms ease-in-out;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+.row > div {
+  display: flex;
+  flex-grow: 1;
+}
+.row .col-4 {
+  max-width: 33.333333%;
+}
+.row .col-6 {
+  max-width: 50%;
+}
+.row .col-8 {
+  max-width: 66.666667%;
+}
+.row .col-12 {
+  max-width: 100%;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.inputWrapper label {
+  font-size: 14px;
+  color: #181a1b;
+}
+.inputWrapper input, .inputWrapper textarea, .inputWrapper select {
+  height: 2rem;
+  padding: 0 0.5rem;
+  border: 1px solid #d9dbde;
+  border-radius: 0.5rem;
+}
+.inputWrapper input:focus, .inputWrapper textarea:focus, .inputWrapper select:focus {
+  outline: none;
+  border-color: #6574cd;
+}
+.inputWrapper input::-moz-placeholder, .inputWrapper textarea::-moz-placeholder, .inputWrapper select::-moz-placeholder {
+  color: #a2a9af;
+}
+.inputWrapper input::placeholder, .inputWrapper textarea::placeholder, .inputWrapper select::placeholder {
+  color: #a2a9af;
+}
+.inputWrapper textarea {
+  height: 104px;
+  padding: 0.25rem 0.5rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.button--primary {
+  background-color: #6574cd;
+  color: white;
+}
+.button--primary:hover {
+  background-color: #253174;
+}
+.button--text {
+  background-color: transparent;
+  color: #6c757d;
+}
+.button--text:hover {
+  background-color: #f4f5f6;
 }/*# sourceMappingURL=style.css.map */
