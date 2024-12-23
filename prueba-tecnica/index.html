@@ -38,11 +38,11 @@
     <main>
       <h1>Asientos del diario general</h1>
       <section class="card stepper">
-        <div class="stepper__step stepper__step--check">
+        <div class="stepper__step stepper__step--currently">
           <div class="stepperStep__icon">
             <picture>
-              <source srcset='/src/assets/stepCheck.svg' type='image/svg+xml'>
-              <img src='/src/assets/stepCheck.webp' type='image/webp' alt='Step check icon'>
+              <source srcset='/src/assets/stepCurrently.svg' type='image/svg+xml'>
+              <img src='/src/assets/stepCurrently.webp' type='image/webp' alt='Step currently icon'>
             </picture>
           </div>
           <div class="stepperStep__text">
@@ -50,11 +50,11 @@
             <p><small>Paso 1</small></p>
           </div>
         </div>
-        <div class="stepper__step stepper__step--currently">
+        <div class="stepper__step">
           <div class="stepperStep__icon">
             <picture>
-              <source srcset='/src/assets/stepCurrently.svg' type='image/svg+xml'>
-              <img src='/src/assets/stepCurrently.webp' type='image/webp' alt='Step currently icon'>
+              <source srcset='/src/assets/stepLock.svg' type='image/svg+xml'>
+              <img src='/src/assets/stepLock.webp' type='image/webp' alt='Step lock icon'>
             </picture>
           </div>
           <div class="stepperStep__text">
@@ -124,7 +124,7 @@
           <div class="col-auto">
             <button class="button button--text">Cancelar</button>
           </div>
-          <div class="col-auto"></div>
+          <div class="col-auto">
             <button class="button button--primary" onclick="window.location.href='index2.html';">Continuar</button>
           </div>
         </div>

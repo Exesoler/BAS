@@ -187,6 +187,10 @@ footer{
         &12{
             max-width: 100%;
         }
+        &auto{
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
     }
 }
 
@@ -215,6 +219,33 @@ footer{
         height: 104px;
         padding: 0.25rem 0.5rem;
     }
+    p{
+        margin: 0;
+    }
+    &__textColapsed{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        p{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            flex-basis: 100%;
+        }
+        img{
+            width: 1rem;
+            height: auto;
+        }
+    }
+}
+.actionsContainer{
+    >.row{
+        justify-content: space-between;
+        >.col-auto{
+            display: flex;
+            gap: 1rem;
+        }
+    }
 }
 
 .button{
@@ -229,14 +260,32 @@ footer{
     transition: $transition;
     &--primary{
         background-color: $color-primary;
-        color: white;
+        color: $color-white;
         &:hover{
             background-color: $color-primary-600;
+        }
+    }
+    &--outline{
+        background-color: $color-white;
+        border-color: $color-secondary;
+        color: $color-secondary;
+        &:hover{
+            background-color: $color-secondary;
+            color: $color-white;
         }
     }
     &--text{
         background-color: transparent;
         color: $color-secondary;
+        &:hover{
+            background-color: $color-secondary-50;
+        }
+    }
+    &--icon{
+        flex-basis: auto;
+        background-color: transparent;
+        color: $color-secondary;
+        padding: 0.25rem;
         &:hover{
             background-color: $color-secondary-50;
         }

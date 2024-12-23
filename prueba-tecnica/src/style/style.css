@@ -218,6 +218,10 @@ footer p {
 .row .col-12 {
   max-width: 100%;
 }
+.row .col-auto {
+  flex-grow: 0;
+  flex-shrink: 1;
+}
 
 .inputWrapper {
   display: flex;
@@ -248,6 +252,32 @@ footer p {
   height: 104px;
   padding: 0.25rem 0.5rem;
 }
+.inputWrapper p {
+  margin: 0;
+}
+.inputWrapper__textColapsed {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.inputWrapper__textColapsed p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-basis: 100%;
+}
+.inputWrapper__textColapsed img {
+  width: 1rem;
+  height: auto;
+}
+
+.actionsContainer > .row {
+  justify-content: space-between;
+}
+.actionsContainer > .row > .col-auto {
+  display: flex;
+  gap: 1rem;
+}
 
 .button {
   display: flex;
@@ -262,15 +292,33 @@ footer p {
 }
 .button--primary {
   background-color: #6574cd;
-  color: white;
+  color: #ffffff;
 }
 .button--primary:hover {
   background-color: #253174;
+}
+.button--outline {
+  background-color: #ffffff;
+  border-color: #6c757d;
+  color: #6c757d;
+}
+.button--outline:hover {
+  background-color: #6c757d;
+  color: #ffffff;
 }
 .button--text {
   background-color: transparent;
   color: #6c757d;
 }
 .button--text:hover {
+  background-color: #f4f5f6;
+}
+.button--icon {
+  flex-basis: auto;
+  background-color: transparent;
+  color: #6c757d;
+  padding: 0.25rem;
+}
+.button--icon:hover {
   background-color: #f4f5f6;
 }/*# sourceMappingURL=style.css.map */
