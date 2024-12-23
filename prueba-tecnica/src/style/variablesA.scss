@@ -1,0 +1,100 @@
+$color-primary-600: #253174;
+$color-primary-500: #3849ad;
+$color-primary: #6574cd;
+$color-primary-300: #8b97d9;
+$color-primary-200: #b2b9e6;
+$color-primary-100: #d8dcf2;
+$color-primary-50: #f0f1fa;
+
+$color-secondary-700: #181a1b;
+$color-secondary-600: #232629;
+$color-secondary-500: #474d52;
+$color-secondary: #6c757d;
+$color-secondary-300: #878f97;
+$color-secondary-200: #a2a9af;
+$color-secondary-100: #bdc2c6;
+$color-secondary-75: #d9dbde;
+$color-secondary-50: #f4f5f6;
+
+$color-green-600: #345c14;
+$color-green-500: #589a22;
+$color-green: #7bd235;
+$color-green-300: #97dc61;
+$color-green-200: #b3e58a;
+$color-green-100: #ceeeb4;
+$color-green-50: #e9f8de;
+
+$color-red-600: #580413;
+$color-red-500: #88071d;
+$color-red: #cf0a2c;
+$color-red-300: #f41a40;
+$color-red-200: #f64b69;
+$color-red-100: #f97c91;
+$color-red-50: #fbacba;
+
+$color-yellow-600: #915b03;
+$color-yellow-500: #dc8b04;
+$color-yellow: #fbb034;
+$color-yellow-300: #fcc364;
+$color-yellow-200: #fdd696;
+$color-yellow-100: #feeac8;
+$color-yellow-50: #fff7eb;
+
+$color-blue-600: #0a5b94;
+$color-blue-500: #0f86db;
+$color-blue: #45aaf2;
+$color-blue-300: #75c0f5;
+$color-blue-200: #a4d6f9;
+$color-blue-100: #d4ebfc;
+$color-blue-50: #f1f8fe;
+
+$color-text: $color-secondary-700;
+$color-border: $color-secondary-75;
+$color-white: #ffffff;
+
+$border-radius-1: 0.5rem;
+$border-radius-2: 0.25rem;
+
+$drop-shadow-1: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+$drop-shadow-2: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+$drop-shadow-3: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+
+h1,h2,h3,h4,h5,h6{
+    text-wrap: balace;
+    line-height: 120%;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+h3{
+    font-size: 28px;
+    font-weight: 600;
+}
+h4{
+    font-size: 24px;
+    font-weight: 600;
+}
+h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+h6{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 400;
+    text-wrap: pretty;
+    line-height: 120%;
+    small{
+        font-size: 14px;
+    }
+}
