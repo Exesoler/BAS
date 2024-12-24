@@ -109,7 +109,7 @@ footer{
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     border-radius: $border-radius-1;
     box-shadow: $box-shadow-1;
 }
@@ -204,14 +204,15 @@ footer{
     flex-direction: column;
     gap: 0.5rem;
     label{
-        font-size: 14px;
+        font-size: $font-size-small;
         color: $color-text;
     }
     input,textarea,select{
         height: 2rem;
         padding: 0 0.5rem;
-        border: 1px solid $color-secondary-75;
+        border: 1px solid $color-border;
         border-radius: $border-radius-1;
+        font-size: $font-size
         &:focus{
             outline: none;
             border-color: $color-primary;
@@ -257,7 +258,7 @@ footer{
     padding: 0.5rem 1rem;
     border-radius: $border-radius-1;
     border: 1px solid transparent;
-    font-size: 15px;
+    font-size: $font-size-small;
     cursor: pointer;
     transition: $transition;
     &--primary{
@@ -287,9 +288,9 @@ footer{
         flex-basis: auto;
         background-color: transparent;
         color: $color-secondary;
-        padding: 0.25rem;
+        padding: 0.25rem 0.5rem;
         gap: 0.5rem;
-        font-size: 14px;
+        font-size: $font-size-small;
         &:hover{
             background-color: $color-secondary-50;
         }
@@ -303,6 +304,7 @@ footer{
 .subtitleContainer{
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-top: 1rem;
     .col{
         display: flex;
         flex-direction: column;
@@ -313,6 +315,115 @@ footer{
             small{
                 color: $color-secondary;
             }
+        }
+    }
+}
+
+.tableContainer{
+    .col{
+        border: 1px solid $color-border;
+        border-radius: $border-radius-2;
+        border-spacing: 0;
+        overflow: hidden;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        thead{
+            tr{
+                height: 2rem;
+                background-color: $color-primary-50;
+                
+                th{
+                    font-size: $font-size-small;
+                    font-weight: 400;
+                    text-align: left;
+                    padding: 0 1rem;
+                }
+            }
+        }
+        tbody{
+            tr{
+                border-top: 1px solid $color-border;
+                td{
+                    height: 56.5px;
+                    padding: 0.25rem 0.5rem;
+                }
+                .inputWrapper{
+                    input{
+                        display: none;
+                    }
+                    .inputValue{
+                        display: flex;
+                    }
+                }
+                &.edit{
+                    .inputWrapper{
+                        input{
+                            display: block;
+                        }
+                        .inputValue{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .inputWrapper{
+            display: inline-grid;
+            position: relative;
+            min-height: 3rem;
+            width: 100%;
+            input{
+                height: 3rem;
+                padding: 0 1rem;
+            }
+            .inputValue{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 3rem;
+                padding: 0 0.5rem;
+                p{
+                    small{
+                        color: $color-secondary;
+                        font-size: $font-size-small;
+                    }
+                    span{
+                        color: $color-secondary-300;
+                        padding-right: 0.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.totalContainer{
+    align-items: center;
+    .col-auto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 3rem;
+        padding: 0 0.75rem;
+        min-width: 170px;
+    }
+    h6{
+        width: 100%;
+        margin: 0;
+        text-align: right;
+        padding-right: 1rem;
+    }
+    p{
+        margin: 0;
+        small{
+            color: $color-secondary;
+            font-size: $font-size-small;
+        }
+        span{
+            color: $color-secondary-300;
+            padding-right: 0.25rem;
         }
     }
 }

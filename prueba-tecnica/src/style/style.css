@@ -148,7 +148,7 @@ footer p {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
@@ -289,7 +289,7 @@ footer p {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: 1px solid transparent;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer;
   transition: all 150ms ease-in-out;
 }
@@ -320,7 +320,7 @@ footer p {
   flex-basis: auto;
   background-color: transparent;
   color: #6c757d;
-  padding: 0.25rem;
+  padding: 0.25rem 0.5rem;
   gap: 0.5rem;
   font-size: 14px;
 }
@@ -335,6 +335,7 @@ footer p {
 .subtitleContainer {
   flex-direction: row;
   flex-wrap: nowrap;
+  margin-top: 1rem;
 }
 .subtitleContainer .col {
   display: flex;
@@ -345,4 +346,98 @@ footer p {
 }
 .subtitleContainer .col p small {
   color: #6c757d;
+}
+
+.tableContainer .col {
+  border: 1px solid #d9dbde;
+  border-radius: 0.25rem;
+  border-spacing: 0;
+  overflow: hidden;
+}
+.tableContainer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tableContainer table thead tr {
+  height: 2rem;
+  background-color: #f0f1fa;
+}
+.tableContainer table thead tr th {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  padding: 0 1rem;
+}
+.tableContainer table tbody tr {
+  border-top: 1px solid #d9dbde;
+}
+.tableContainer table tbody tr td {
+  height: 56.5px;
+  padding: 0.25rem 0.5rem;
+}
+.tableContainer table tbody tr .inputWrapper input {
+  display: none;
+}
+.tableContainer table tbody tr .inputWrapper .inputValue {
+  display: flex;
+}
+.tableContainer table tbody tr.edit .inputWrapper input {
+  display: block;
+}
+.tableContainer table tbody tr.edit .inputWrapper .inputValue {
+  display: none;
+}
+.tableContainer table .inputWrapper {
+  display: inline-grid;
+  position: relative;
+  min-height: 3rem;
+  width: 100%;
+}
+.tableContainer table .inputWrapper input {
+  height: 3rem;
+  padding: 0 1rem;
+}
+.tableContainer table .inputWrapper .inputValue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 3rem;
+  padding: 0 0.5rem;
+}
+.tableContainer table .inputWrapper .inputValue p small {
+  color: #6c757d;
+  font-size: 14px;
+}
+.tableContainer table .inputWrapper .inputValue p span {
+  color: #878f97;
+  padding-right: 0.25rem;
+}
+
+.totalContainer {
+  align-items: center;
+}
+.totalContainer .col-auto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 3rem;
+  padding: 0 0.75rem;
+  min-width: 170px;
+}
+.totalContainer h6 {
+  width: 100%;
+  margin: 0;
+  text-align: right;
+  padding-right: 1rem;
+}
+.totalContainer p {
+  margin: 0;
+}
+.totalContainer p small {
+  color: #6c757d;
+  font-size: 14px;
+}
+.totalContainer p span {
+  color: #878f97;
+  padding-right: 0.25rem;
 }/*# sourceMappingURL=style.css.map */
