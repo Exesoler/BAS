@@ -43,6 +43,20 @@ body{
     background-color: $color-primary-100;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    &.tableFullScreen{
+        header,
+        footer,
+        h1,
+        .stepper,
+        .resumeContainer,
+        .actionsContainer{
+            display: none !important;
+        }
+        .actionFullScreen{
+            display: flex;
+        }
+    }
 }
 
 img{
@@ -255,6 +269,13 @@ footer{
     }
 }
 
+.actionFullScreen{
+    display: none;
+    >.row{
+        justify-content: center;
+    }
+}
+
 .button{
     display: flex;
     align-items: center;
@@ -268,6 +289,11 @@ footer{
     &--primary{
         background-color: $color-primary;
         color: $color-white;
+        gap: 0.5rem;
+        img{
+            width: 1rem;
+            height: auto;
+        }
         &:hover{
             background-color: $color-primary-600;
         }
@@ -445,6 +471,7 @@ footer{
     &__content{
         min-width: 450px;
         box-shadow: $box-shadow-3;
+        transition: $transition-1;
     }
     &__header{
         display: flex;
@@ -465,9 +492,9 @@ footer{
                 border: 1px dashed $color-border;
                 border-radius: $border-radius-2;
                 &:hover{
-                    border-width: 2px;
-                    border-color: $color-blue-500;
-                    transition: $transition-2;
+                    border-width: 1px;
+                    border-color: $color-primary;
+                    transition: $transition-1;
                 }
                 img{
                     width: 100px;
@@ -537,11 +564,7 @@ footer{
                                 height: 0.2rem;
                                 background-color: $color-primary;
                                 border-radius: 1rem;
-                                transition: all 3000ms ease-in-out;
-                                &--success{
-                                    width: 100%;
-                                    background-color: $color-green-500;
-                                }
+                                transition: width 3000ms ease-in-out;
                             }
                         }
                     }
@@ -549,7 +572,6 @@ footer{
                 &--success{
                     .progress{
                         &__bar{
-                            width: 100% !important;
                             background-color: $color-green-500 !important;
                         }
                     }

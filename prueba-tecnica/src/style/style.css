@@ -88,6 +88,18 @@ body {
   background-color: #d8dcf2;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
+}
+body.tableFullScreen header,
+body.tableFullScreen footer,
+body.tableFullScreen h1,
+body.tableFullScreen .stepper,
+body.tableFullScreen .resumeContainer,
+body.tableFullScreen .actionsContainer {
+  display: none !important;
+}
+body.tableFullScreen .actionFullScreen {
+  display: flex;
 }
 
 img {
@@ -287,6 +299,13 @@ footer p {
   gap: 1rem;
 }
 
+.actionFullScreen {
+  display: none;
+}
+.actionFullScreen > .row {
+  justify-content: center;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -301,6 +320,11 @@ footer p {
 .button--primary {
   background-color: #6574cd;
   color: #ffffff;
+  gap: 0.5rem;
+}
+.button--primary img {
+  width: 1rem;
+  height: auto;
 }
 .button--primary:hover {
   background-color: #253174;
@@ -461,6 +485,7 @@ footer p {
 .uploadModal__content {
   min-width: 450px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transition: all 150ms ease-in-out;
 }
 .uploadModal__header {
   display: flex;
@@ -480,9 +505,9 @@ footer p {
   border-radius: 0.25rem;
 }
 .uploadModal__body .uploadModalBody__dragAndDrop:hover {
-  border-width: 2px;
-  border-color: #0f86db;
-  transition: all 500ms ease-in;
+  border-width: 1px;
+  border-color: #6574cd;
+  transition: all 150ms ease-in-out;
 }
 .uploadModal__body .uploadModalBody__dragAndDrop img {
   width: 100px;
@@ -547,14 +572,9 @@ footer p {
   height: 0.2rem;
   background-color: #6574cd;
   border-radius: 1rem;
-  transition: all 3000ms ease-in-out;
-}
-.uploadModal__body .uploadModalBody__progress .uploadModalBodyProgress__content .progress__bar--success {
-  width: 100%;
-  background-color: #589a22;
+  transition: width 3000ms ease-in-out;
 }
 .uploadModal__body .uploadModalBody__progress--success .progress__bar {
-  width: 100% !important;
   background-color: #589a22 !important;
 }
 .uploadModal__body .uploadModalBody__progress--success .status small::before {

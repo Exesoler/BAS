@@ -79,7 +79,7 @@
         </div>
       </section>
       <section class="card">
-        <div class="row">
+        <div class="row resumeContainer">
           <div class="col-8">
             <div class="row">
               <div class="col-4 inputWrapper">
@@ -141,7 +141,7 @@
             </button>
           </div>
           <div class="col-auto">
-            <button class="button button--icon">
+            <button class="button button--icon" onclick="openFullScreen();">
               <img src='/src/assets/fullscreen.svg' type='image/svg+xml'>
               Pantalla completa
             </button>
@@ -351,6 +351,16 @@
           </div>
         </div>
       </section>
+      <section class="actionFullScreen">
+        <div class="row">
+          <div class="col-auto">
+            <button class="button button--primary" onclick="closeFullScreen();">
+              <img src='/src/assets/fullscreenWhite.svg' type='image/svg+xml'>
+              Salir de pantalla completa
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <img src="/src/assets/copyright.svg" alt="Copyrigth Icon">
@@ -365,7 +375,7 @@
           </button>
         </div>
         <div class="uploadModal__body">
-          <div class="uploadModalBody__dragAndDrop">
+          <div class="uploadModalBody__dragAndDrop" onclick="changeUpload()">
             <picture>
               <source srcset='/src/assets/csv_upload.webp' type='image/webp'>
               <img src='/src/assets/csv_upload.png' type='image/png' alt='Upload CSV'>
@@ -382,7 +392,7 @@
               <p class="fileName">NombreDelArchivo_2024.cvs</p>
               <p class="status"><small></small></p>
               <div class="progress">
-                <div class="progress__bar"></div>
+                <div class="progress__bar" style="width: 0%;"></div>
               </div>
             </div>
           </div>
