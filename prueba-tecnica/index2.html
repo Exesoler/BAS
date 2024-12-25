@@ -135,7 +135,7 @@
             <p><small>Cantidad de registros 2</small></p>
           </div>
           <div class="col-auto">
-            <button class="button button--icon">
+            <button class="button button--icon" onclick="openModal()">
               <img src='/src/assets/upload_file.svg' type='image/svg+xml'>
               Importar CSV
             </button>
@@ -217,7 +217,7 @@
                     </div>
                   </td>
                   <div class="checkBoxContainer">
-                    
+
                   </div>
                 </tr>
                 <tr>
@@ -356,6 +356,39 @@
       <img src="/src/assets/copyright.svg" alt="Copyrigth Icon">
       <p><small>Todos los derechos reservados</small></p>
     </footer>
+    <div class="uploadModal hidden">
+      <div class="card uploadModal__content">
+        <div class="uploadModal__header">
+          <h6>Importar archivo CSV</h6>
+          <button class="button button--icon" onclick="closeModal()">
+            <img src='/src/assets/close.svg' type='image/svg+xml'>
+          </button>
+        </div>
+        <div class="uploadModal__body">
+          <div class="uploadModalBody__dragAndDrop">
+            <picture>
+              <source srcset='/src/assets/csv_upload.webp' type='image/webp'>
+              <img src='/src/assets/csv_upload.png' type='image/png' alt='Upload CSV'>
+            </picture>
+            <h6>Arrastra y suelta</h6>
+            <p>tu archivo aquí, o <label for="file">búscalo en tu pc</label>.</p>
+            <input type="file" name="file" id="file" accept=".csv" hidden>
+          </div>
+          <div class="uploadModalBody__progress hidden">
+            <div class="uploadModalBodyProgress__icon">
+              <img src="/src/assets/file.svg" alt="File icon">
+            </div>
+            <div class="uploadModalBodyProgress__content">
+              <p class="fileName">NombreDelArchivo_2024.cvs</p>
+              <p class="status"><small></small></p>
+              <div class="progress">
+                <div class="progress__bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="/src/js/main.js"></script>
   </body>
 </html>

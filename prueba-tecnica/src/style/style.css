@@ -69,6 +69,10 @@ p small {
   background: #253174;
 }
 
+.hidden {
+  display: none !important;
+}
+
 * {
   box-sizing: border-box;
   position: relative;
@@ -244,6 +248,7 @@ footer p {
   padding: 0 0.5rem;
   border: 1px solid #d9dbde;
   border-radius: 0.5rem;
+  font-size: 15px;
 }
 .inputWrapper input:focus, .inputWrapper textarea:focus, .inputWrapper select:focus {
   outline: none;
@@ -440,4 +445,119 @@ footer p {
 .totalContainer p span {
   color: #878f97;
   padding-right: 0.25rem;
+}
+
+.uploadModal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.uploadModal__content {
+  min-width: 450px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.uploadModal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.uploadModal__header h6 {
+  margin: 0;
+}
+.uploadModal__body .uploadModalBody__dragAndDrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px dashed #d9dbde;
+  border-radius: 0.25rem;
+}
+.uploadModal__body .uploadModalBody__dragAndDrop:hover {
+  border-width: 2px;
+  border-color: #0f86db;
+  transition: all 500ms ease-in;
+}
+.uploadModal__body .uploadModalBody__dragAndDrop img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.uploadModal__body .uploadModalBody__dragAndDrop h6, .uploadModal__body .uploadModalBody__dragAndDrop p {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.uploadModal__body .uploadModalBody__dragAndDrop p {
+  padding-top: 0.2rem;
+}
+.uploadModal__body .uploadModalBody__dragAndDrop label {
+  color: #0f86db;
+  cursor: pointer;
+}
+.uploadModal__body .uploadModalBody__dragAndDrop label:hover {
+  color: #0a5b94;
+}
+.uploadModal__body .uploadModalBody__progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 1rem 0;
+}
+.uploadModal__body .uploadModalBody__progress .uploadModalBodyProgress__icon img {
+  width: 1.5rem;
+  height: auto;
+}
+.uploadModal__body .uploadModalBody__progress .uploadModalBodyProgress__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 1rem;
+}
+.uploadModal__body .uploadModalBody__progress .uploadModalBodyProgress__content p {
+  margin: 0 0 0.5rem;
+}
+.uploadModal__body .uploadModalBody__progress .uploadModalBodyProgress__content .status small::before {
+  content: "Subiendo...";
+  color: #0f86db;
+}
+.uploadModal__body .uploadModalBody__progress .uploadModalBodyProgress__content .progress {
+  display: flex;
+  align-items: center;
+  background-color: #d9dbde;
+  width: 100%;
+  height: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+.uploadModal__body .uploadModalBody__progress .uploadModalBodyProgress__content .progress__bar {
+  width: 0%;
+  display: block;
+  height: 0.2rem;
+  background-color: #6574cd;
+  border-radius: 1rem;
+  transition: all 3000ms ease-in-out;
+}
+.uploadModal__body .uploadModalBody__progress .uploadModalBodyProgress__content .progress__bar--success {
+  width: 100%;
+  background-color: #589a22;
+}
+.uploadModal__body .uploadModalBody__progress--success .progress__bar {
+  width: 100% !important;
+  background-color: #589a22 !important;
+}
+.uploadModal__body .uploadModalBody__progress--success .status small::before {
+  content: "Completado" !important;
+  color: #589a22 !important;
 }/*# sourceMappingURL=style.css.map */

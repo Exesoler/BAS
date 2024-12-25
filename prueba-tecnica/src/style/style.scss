@@ -24,6 +24,10 @@
     background: $color-primary-600; 
 }
 
+.hidden{
+    display: none !important;
+}
+
 *{
     box-sizing: border-box;
     position: relative;
@@ -160,7 +164,7 @@ footer{
                 height: 0.25rem;
                 background-color: $color-primary;
                 border-radius: 1rem;
-                transition: $transition;
+                transition: $transition-1;
             }
         }
     }
@@ -212,7 +216,7 @@ footer{
         padding: 0 0.5rem;
         border: 1px solid $color-border;
         border-radius: $border-radius-1;
-        font-size: $font-size
+        font-size: $font-size;
         &:focus{
             outline: none;
             border-color: $color-primary;
@@ -260,7 +264,7 @@ footer{
     border: 1px solid transparent;
     font-size: $font-size-small;
     cursor: pointer;
-    transition: $transition;
+    transition: $transition-1;
     &--primary{
         background-color: $color-primary;
         color: $color-white;
@@ -424,6 +428,141 @@ footer{
         span{
             color: $color-secondary-300;
             padding-right: 0.25rem;
+        }
+    }
+}
+
+.uploadModal{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.75);
+    &__content{
+        min-width: 450px;
+        box-shadow: $box-shadow-3;
+    }
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h6{
+            margin: 0;
+        }
+    }
+    &__body{
+        .uploadModalBody{
+            &__dragAndDrop{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 1rem;
+                border: 1px dashed $color-border;
+                border-radius: $border-radius-2;
+                &:hover{
+                    border-width: 2px;
+                    border-color: $color-blue-500;
+                    transition: $transition-2;
+                }
+                img{
+                    width: 100px;
+                    height: auto;
+                    margin-bottom: 1rem;
+                }
+                h6,p{
+                    margin: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+                p{
+                    padding-top: 0.20rem;
+                }
+                label{
+                    color: $color-blue-500;
+                    cursor: pointer;
+                    &:hover{
+                        color: $color-blue-600;
+                    }
+                }
+            }
+            &__progress{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.25rem;
+                padding: 1rem 0;
+                .uploadModalBodyProgress{
+                    &__icon{
+                        img{
+                            width: 1.5rem;
+                            height: auto;
+                        }
+                    }
+                    &__content{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-grow: 1;
+                        gap: 1rem;
+                        p{
+                            margin: 0 0 0.5rem;
+                        }
+                        .status{
+                            small{
+                                &::before{
+                                    content: "Subiendo...";
+                                    color: $color-blue-500;
+                                }
+                            }
+                        }
+                        .progress{
+                            display: flex;
+                            align-items: center;
+                            background-color: $color-secondary-75;
+                            width: 100%;
+                            height: 0.2rem;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            border-radius: $border-radius-2;
+                            overflow: hidden;
+                            &__bar{
+                                width: 0%;
+                                display: block;
+                                height: 0.2rem;
+                                background-color: $color-primary;
+                                border-radius: 1rem;
+                                transition: all 3000ms ease-in-out;
+                                &--success{
+                                    width: 100%;
+                                    background-color: $color-green-500;
+                                }
+                            }
+                        }
+                    }
+                }
+                &--success{
+                    .progress{
+                        &__bar{
+                            width: 100% !important;
+                            background-color: $color-green-500 !important;
+                        }
+                    }
+                    .status{
+                        small{
+                            &::before{
+                                content: "Completado" !important;
+                                color: $color-green-500 !important;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
