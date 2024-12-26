@@ -1,0 +1,106 @@
+$color-primary-600: #00101f;
+$color-primary-500: #001b33;
+$color-primary: #004582;
+$color-primary-300: #007ae5;
+$color-primary-200: #99cfff;
+$color-primary-100: #cce7ff;
+$color-primary-50: #E5F3FF;
+
+$color-secondary-700: #1A1A1A;
+$color-secondary-600: #262626;
+$color-secondary-500: #424242;
+$color-secondary: #5C5C5C;
+$color-secondary-300: #757575;
+$color-secondary-200: #999999;
+$color-secondary-100: #BFBFBF;
+$color-secondary-75: #F2F2F2;
+$color-secondary-50: #F7F7F7;
+
+$color-green-600: #113710;
+$color-green-500: #206B1F;
+$color-green: #32A430;
+$color-green-300: #63D161;
+$color-green-200: #C5EEC4;
+$color-green-100: #EFFAEF;
+$color-green-50: #F7FDF7;
+
+$color-red-600: #651013;
+$color-red-500: #BE1E24;
+$color-red: #E2464C;
+$color-red-300: #EA7B7F;
+$color-red-200: #F5BDBF;
+$color-red-100: #FCEEEE;
+$color-red-50: #FDF6F6;
+
+$color-yellow-600: #70380A;
+$color-yellow-500: #B65B11;
+$color-yellow: #EB7F27;
+$color-yellow-300: #F2AC73;
+$color-yellow-200: #F9D6B9;
+$color-yellow-100: #FDF4EC;
+$color-yellow-50: #FEFAF6;
+
+$color-blue-600: #04344D;
+$color-blue-500: #07557E;
+$color-blue: #0B85C4;
+$color-blue-300: #3EB6F4;
+$color-blue-200: #B7E4FB;
+$color-blue-100: #ECF8FE;
+$color-blue-50: #F5FBFE;
+
+$color-text: #29343E;
+$color-border: $color-secondary-75;
+$color-white: #ffffff;
+
+$border-radius-1: 0.5rem;
+$border-radius-2: 0.25rem;
+
+$box-shadow-1: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+$box-shadow-2: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+$box-shadow-3: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+
+$transition-1: all 150ms ease-in-out;
+$transition-2: all 500ms ease-in;
+
+$font-size: 15px;
+$font-size-small: 14px;
+
+h1,h2,h3,h4,h5,h6{
+    text-wrap: balace;
+    line-height: 120%;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+h2{
+    font-size: 32px;
+    font-weight: 600;
+}
+h3{
+    font-size: 28px;
+    font-weight: 600;
+}
+h4{
+    font-size: 24px;
+    font-weight: 600;
+}
+h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+h6{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 400;
+    text-wrap: pretty;
+    line-height: 120%;
+    small{
+        font-size: 14px;
+    }
+}
