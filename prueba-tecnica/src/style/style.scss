@@ -56,6 +56,9 @@ body{
         .actionFullScreen{
             display: flex;
         }
+        .subtitleContainer{
+            margin: 0;
+        }
     }
 }
 
@@ -354,9 +357,9 @@ footer{
         border: 1px solid $color-border;
         border-radius: $border-radius-2;
         border-spacing: 0;
-        overflow: hidden;
     }
     table{
+        overflow: hidden;
         width: 100%;
         border-collapse: collapse;
         thead{
@@ -468,6 +471,7 @@ footer{
     align-items: center;
     justify-content: center;
     background-color: rgba(0,0,0,0.75);
+    z-index: 3;
     &__content{
         min-width: 450px;
         box-shadow: $box-shadow-3;
@@ -584,6 +588,52 @@ footer{
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.numberCheckbox{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    z-index: 1;
+    top: 0;
+    left: -10px;
+    font-size: $font-size-small;
+    .numberCheckbox__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 57px;
+        width: 1rem;
+        img{
+            width: 1rem;
+            height: 1rem;
+            cursor: pointer;
+            display: none;
+        }
+        p{
+            color: $color-secondary-200;
+            background-color: $color-white;
+            margin: 0;
+            width: 1rem;
+            text-align: center;
+        }
+        &:first-child{
+            min-height: 32px;
+        }
+        &:hover,
+        &.selected{
+            img{
+                display: block;
+            }
+            p{
+                display: none;
             }
         }
     }
