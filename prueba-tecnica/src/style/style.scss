@@ -7,11 +7,11 @@
 }
 
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 6px; 
 }
 /* Track */
 ::-webkit-scrollbar-track {
-    background-color: transparent;
+    background-color: transparent; 
     opacity: 0;
 }
 /* Handle */
@@ -22,10 +22,6 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: $color-primary-600; 
-}
-
-.hidden{
-    display: none !important;
 }
 
 *{
@@ -123,6 +119,10 @@ footer{
     p{
         margin: 0;
     }
+}
+
+.hidden{
+    display: none !important;
 }
 
 .card{

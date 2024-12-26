@@ -69,10 +69,6 @@ p small {
   background: #253174;
 }
 
-.hidden {
-  display: none !important;
-}
-
 * {
   box-sizing: border-box;
   position: relative;
@@ -160,6 +156,10 @@ footer {
 }
 footer p {
   margin: 0;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .card {
