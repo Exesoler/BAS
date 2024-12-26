@@ -287,7 +287,7 @@ footer p {
   align-items: center;
   gap: 0.5rem;
 }
-.inputWrapper__textColapsed p {
+.inputWrapper__textColapsed:not(.review) p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -378,6 +378,16 @@ footer p {
 }
 .subtitleContainer .col p small {
   color: #6c757d;
+}
+.subtitleContainer.review .col {
+  flex-direction: row;
+}
+.subtitleContainer.review .col h6 {
+  width: 100%;
+}
+.subtitleContainer.review .col p {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 .tableContainer .col {

@@ -254,11 +254,13 @@ footer{
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        p{
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            flex-basis: 100%;
+        &:not(.review){
+            p{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                flex-basis: 100%;
+            }
         }
     }
 }
@@ -347,6 +349,17 @@ footer{
         p{
             small{
                 color: $color-secondary;
+            }
+        }
+    }
+    &.review{
+        .col{
+            flex-direction: row;
+            h6{
+                width: 100%;
+            }
+            p{
+                min-width: fit-content;
             }
         }
     }

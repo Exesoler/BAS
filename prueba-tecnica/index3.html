@@ -1,0 +1,1597 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style/normalize.css">
+    <link rel="stylesheet" href="/src/style/style.css">
+    <title>Asientos del diario general - EasySoft</title>
+  </head>
+  <body>
+    <header>
+      <div class="logoContainer">
+        <picture>
+          <source srcset='/src/assets/logo.svg' type="image/svg+xml">
+          <source srcset='/src/assets/logo.webp' type='image/webp'>
+          <img src='/src/assets/logo.jpg' alt='EasySoft Isologotipo' type='image/jpeg'>
+        </picture>
+      </div>
+      <div class="userContainer">
+        <div class="userContainer__info">
+          <p>Nombre de usuario</p>
+          <p><small>Empresa</small></p>
+        </div>
+        <div class="userContainer__avatar">
+          <picture>
+            <source srcset='/src/assets/avatar.svg' type='image/svg+xml'>
+            <img src='/src/assets/avatar.webp' type='image/webp' alt='Avatar Icon'>
+          </picture>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Asientos del diario general</h1>
+      <section class="card stepper">
+        <div class="stepper__step stepper__step--check">
+          <div class="stepperStep__icon">
+            <picture>
+              <source srcset='/src/assets/stepCheck.svg' type='image/svg+xml'>
+              <img src='/src/assets/stepCheck.webp' type='image/webp' alt='Step check icon'>
+            </picture>
+          </div>
+          <div class="stepperStep__text">
+            <p>Encabezado</p>
+            <p><small>Paso 1</small></p>
+          </div>
+        </div>
+        <div class="stepper__step stepper__step--check">
+          <div class="stepperStep__icon">
+            <picture>
+              <source srcset='/src/assets/stepCheck.svg' type='image/svg+xml'>
+              <img src='/src/assets/stepCheck.webp' type='image/webp' alt='Step check icon'>
+            </picture>
+          </div>
+          <div class="stepperStep__text">
+            <p>Detalle</p>
+            <p><small>Paso 2</small></p>
+          </div>
+        </div>
+        <div class="stepper__step stepper__step--currently">
+          <div class="stepperStep__icon">
+            <picture>
+              <source srcset='/src/assets/stepCurrently.svg' type='image/svg+xml'>
+              <img src='/src/assets/stepCurrently.webp' type='image/webp' alt='Step currently icon'>
+            </picture>
+          </div>
+          <div class="stepperStep__text">
+            <p>Resumen</p>
+            <p><small>Paso 3</small></p>
+          </div>
+        </div>
+        <div class="stepper__progress">
+          <div class="stepperProgress__bar" style="width: 100%;"></div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="row resumeContainer">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-4 inputWrapper">
+                <label for="fecha">Fecha</label>
+                <p>26/12/2024</p>
+              </div>
+              <div class="col-4 inputWrapper">
+                <label for="valoracion">Valoración</label>
+                <p>26/12/2024</p>
+              </div>
+              <div class="col-4 inputWrapper">
+                <label for="numero">Número</label>
+                <p>541-7481-846</p>
+              </div>
+              <div class="col-4 inputWrapper">
+                <label for="modelo">Modelo</label>
+                <p>0150</p>
+              </div>
+              <div class="col-8 inputWrapper">
+                <label for="tipo">Tipo</label>
+                <p>Normal</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-12 inputWrapper">
+                <label for="observaciones">Observaciones</label>
+                <div class="inputWrapper__textColapsed review">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in augue varius, hendrerit nibh et, suscipit tellus. Aenean facilisis nulla dui, vitae scelerisque nulla mollis ac. Curabitur auctor leo non lacinia scelerisque. Vivamus non sollicitudin metus. Quisque ullamcorper vestibulum lectus, eget dapibus est sodales id. Nulla ut porttitor ante.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row subtitleContainer review">
+          <div class="col">
+            <h6>Detalles</h6>
+            <p><small>Cantidad de registros <span>24</span></small></p>
+          </div>
+        </div>
+        <div class="row tableContainer">
+          <div class="col">
+            <div class="numberCheckbox">
+              <div class="numberCheckbox__item" data-header="true">
+                <p></p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>1</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>2</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>3</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>4</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>5</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>6</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>7</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>8</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>9</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>10</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>11</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>11</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>12</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>13</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>14</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>15</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>16</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>17</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>18</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>19</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>20</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>21</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>22</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>23</p>
+              </div>
+              <div class="numberCheckbox__item">
+                <p>24</p>
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th width="15%">Cuenta</th>
+                  <th width="25%">Nombre</th>
+                  <th width="5%">Subcuenta</th>
+                  <th width="25%">Detalle</th>
+                  <th width="15%">Debe</th>
+                  <th width="15%">Haber</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Cuenta" name="cuenta" id="cuenta" tabindex="1">
+                      <div class="inputValue">
+                        <p>2.1.03.03.574</p>
+                        <p><small>Alias de identificación</small></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Nombre" name="nombre" id="nombre" tabindex="2">
+                      <div class="inputValue">
+                        <p>Sueldos a pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="5%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Subcuenta" name="subcuenta" id="subcuenta" tabindex="3">
+                      <div class="inputValue">
+                        <p>1</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="25%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="Detalle" name="detalle" id="detalle" tabindex="4">
+                      <div class="inputValue">
+                        <p>A pagar</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="debe" id="debe" tabindex="5">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td width="15%">
+                    <div class="inputWrapper">
+                      <input type="text" placeholder="$ 000.000.000" name="haber" id="haber" tabindex="6">
+                      <div class="inputValue">
+                        <p><span>$</span>000.000.000</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row totalContainer">
+          <div class="col">
+            <h6>Totales</h6>
+          </div>
+          <div class="col-auto">
+            <p><span>$</span>000.000.000</p>
+          </div>
+          <div class="col-auto">
+            <p><span>$</span>000.000.000</p>
+          </div>
+        </div>
+      </section>
+      <section class="actionsContainer">
+        <div class="row">
+          <div class="col-auto">
+            <button class="button button--text" onclick="window.location.href='index2.html';">Volver</button>
+          </div>
+          <div class="col-auto">
+            <button class="button button--outline">Imprimir resumen</button>
+            <button class="button button--outline">Guardar borrador</button>
+            <button class="button button--primary" onclick="window.location.href='index.html';">Grabar asiento</button>
+          </div>
+        </div>
+      </section>
+      <section class="actionFullScreen">
+        <div class="row">
+          <div class="col-auto">
+            <button class="button button--primary" onclick="closeFullScreen();">
+              <img src='/src/assets/fullscreenWhite.svg' type='image/svg+xml'>
+              Salir de pantalla completa
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="/src/assets/copyright.svg" alt="Copyrigth Icon">
+      <p><small>Todos los derechos reservados</small></p>
+    </footer>
+    <div class="uploadModal hidden">
+      <div class="card uploadModal__content">
+        <div class="uploadModal__header">
+          <h6>Importar archivo CSV</h6>
+          <button class="button button--icon" onclick="closeModal()">
+            <img src='/src/assets/close.svg' type='image/svg+xml'>
+          </button>
+        </div>
+        <div class="uploadModal__body">
+          <div class="uploadModalBody__dragAndDrop" onclick="changeUpload()">
+            <picture>
+              <source srcset='/src/assets/csv_upload.webp' type='image/webp'>
+              <img src='/src/assets/csv_upload.png' type='image/png' alt='Upload CSV'>
+            </picture>
+            <h6>Arrastra y suelta</h6>
+            <p>tu archivo aquí, o <label for="file">búscalo en tu pc</label>.</p>
+            <input type="file" name="file" id="file" accept=".csv" hidden>
+          </div>
+          <div class="uploadModalBody__progress hidden">
+            <div class="uploadModalBodyProgress__icon">
+              <img src="/src/assets/file.svg" alt="File icon">
+            </div>
+            <div class="uploadModalBodyProgress__content">
+              <p class="fileName">NombreDelArchivo_2024.cvs</p>
+              <p class="status"><small></small></p>
+              <div class="progress">
+                <div class="progress__bar" style="width: 0%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/src/js/main.js"></script>
+  </body>
+</html>
